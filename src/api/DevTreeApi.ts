@@ -16,7 +16,7 @@ export async function getUser () {
 
 export async function updateProfile (formDate: ProfileForm) {
     try {
-            const { data } = await api.patch<string>('/user', formDate)
+        const { data } = await api.patch<string>('/user', formDate)
         return data;
     } catch (error) {
         if (isAxiosError(error) && error.response) {
