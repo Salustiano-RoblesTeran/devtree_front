@@ -16,10 +16,9 @@ const LoginView = () => {
   const { register, handleSubmit, formState: {errors} } = useForm({defaultValues:initialValues});
 
   const handleLogin =  async (formData : LoginForm) => {
-            try {
+        try {
             const {data} = await api.post(`/auth/login`, formData)
-            console.log(data)
-            toast.success(data)
+            localStorage.setItem('AUTH_TOKEN', data)
         } catch (error) {
             if (isAxiosError(error)) {
                 toast.error(error.response?.data.error)
