@@ -1,13 +1,22 @@
 import { Link, Outlet } from "react-router-dom"
 import NavigationTabs from "./NavigationsTabs"
 import { Toaster } from "sonner"
-import { User } from "../types"
+import { SocialNetwork, User } from "../types"
+import { useEffect, useState } from "react"
+import DevTreeLink from "./DevTreeLink"
 
 type DevTreeProps = {
     data: User,
 }
 
 const DevTree = ({data} : DevTreeProps) => {
+
+    const [enabledLinks, setEnablesLinks] = useState<SocialNetwork[]>(JSON.parse(data.links).filter((item : SocialNetwork)  => item.enabled));
+
+    useEffect(() => {
+        setEnablesLinks(JSON.parse(data.links).filter((item : SocialNetwork)  => item.enabled))
+    }, [data])
+
   return (
     <>
             <header className="bg-slate-800 py-5">
@@ -47,6 +56,12 @@ const DevTree = ({data} : DevTreeProps) => {
                             <p className="text-4xl text-center text-white">{data.handle}</p>
                             {data.image && <img src={data.image} alt="Imagen perfil" className="mx-auto max-w-[250px]"/>}
                             <p className="text-center text-lg font-black text-white">{data.description}</p> 
+                            <p className="text-white">Iconos Aqui</p>
+                            <div className="mt-20 flex flex-col gap-5 ">
+                                {enabledLinks.map(link => (
+                                     <DevTreeLink key={link.name} link={link} />
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </main>
