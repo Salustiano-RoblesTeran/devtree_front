@@ -10,7 +10,7 @@ import { useQueryClient } from "@tanstack/react-query"
 import { Header } from "./Header"
 
 type DevTreeProps = {
-    data: User,
+    data: User
 }
 
 const DevTree = ({data} : DevTreeProps) => {
