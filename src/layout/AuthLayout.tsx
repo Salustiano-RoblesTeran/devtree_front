@@ -1,6 +1,9 @@
 import { Outlet } from 'react-router-dom'
 import { Toaster } from 'sonner'
-import Logo from '../components/logo'
+import Logo from '../components/Logo'
+
+
+
 
 const AuthLayout = () => {
   return (

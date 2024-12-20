@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import LoginView from './views/LoginView';
 import RegisterView from './views/RegisterView';
 import AuthLayout from './layout/AuthLayout';
