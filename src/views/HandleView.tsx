@@ -1,6 +1,7 @@
 import { Navigate, useParams } from'react-router-dom'
 import { useQuery } from '@tanstack/react-query';
 import { getUserByHandle } from '../api/DevTreeApi';
+import HandleData from '../components/HandleData';
 
 const HandleView = () => {
 
@@ -13,8 +14,6 @@ const HandleView = () => {
   })
   if (isLoading) return <p className='text-center text-white'>Cargando...</p>
   if (error) return <Navigate to={'/404'}/>
-  return (
-    <div>HandleView</div>
-  )
+  if (data) return <HandleData data={data}/>
 }
 export default HandleView
