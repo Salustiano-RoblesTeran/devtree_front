@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"  // Removed the space between js and jsx
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "home": "url('/bg.svg')"
+      },
+      backgroundSize: {
+        "home-xl": "50%"
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/forms')
