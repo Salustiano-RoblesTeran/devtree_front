@@ -1,50 +1,120 @@
-# React + TypeScript + Vite
+# devTree
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**devTree** es una página web diseñada para consolidar todas tus redes sociales en un solo lugar. Permite a los usuarios buscar su nombre, verificar si está disponible y, si lo está, crear una cuenta para mostrar todos sus perfiles sociales en una plataforma organizada y fácil de acceder.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Despliegue
+La aplicación está desplegada en **Netlify**.
 
-## Expanding the ESLint configuration
+## ⚠️ Importante
+La primera solicitud puede tardar un poco más en responder, ya que está alojada en Netlify con un plan gratuito.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+⏳ **¡Gracias por tu paciencia!** 😄
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🌟 Características
+
+### 💪 Funcionalidades para Usuario
+
+#### 📊 Gestión de Redes Sociales:
+- Puedes agregar enlaces a tus redes sociales en tu perfil.
+- Muestra todas tus redes sociales en un solo lugar de manera organizada.
+
+#### 🛠️ Creación de Cuenta:
+- Los usuarios pueden verificar la disponibilidad de su nombre de usuario y, si está libre, crear una cuenta en la plataforma.
+
+---
+
+### 👤 Funcionalidades para Usuarios no Logueados
+
+#### 🔍 Búsqueda de Nombres de Usuario:
+- Los usuarios pueden buscar si un nombre está disponible para registrarse.
+
+#### 🌏 Visualización de Perfiles:
+- Los usuarios pueden explorar los perfiles de otros usuarios con sus redes sociales integradas.
+
+---
+
+## 💻 Stack Tecnológico
+
+- **Frontend:** React, Tailwind CSS, React Router, React Hook Form
+- **Backend:** Node.js, Express.js, MongoDB
+- **Autenticación y Seguridad:** JWT (JSON Web Tokens)
+- **Desarrollo:** Vite, ESLint
+- **Gestión de Estado:** React Query
+- **UI/UX:** Heroicons, Headless UI
+
+---
+
+## 🔄 Instalación
+
+### 🚀 Ejecución
+
+#### Frontend
+1. Clona el repositorio del frontend:
+   ```bash
+   git clone https://github.com/Salustiano-RoblesTeran/devtree_front.git
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Inicia la aplicación en modo desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+#### Backend
+1. Clona el repositorio del backend:
+   ```bash
+   git clone https://github.com/Salustiano-RoblesTeran/devtree_back.git
+   ```
+2. Instala las dependencias del backend:
+   ```bash
+   npm install
+   ```
+3. Inicia el servidor del backend:
+   ```bash
+   npm run server
+   ```
+
+### Otros comandos de ejecución
+
+```bash
+npm run build
 ```
+Construye los archivos optimizados para producción.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run preview
 ```
+Inicia la vista previa de la aplicación en el entorno de producción.
+
+```bash
+npm run lint
+```
+Realiza el análisis de código con **ESLint** para asegurar la calidad del código.
+
+---
+
+## 🛠️ Contribuciones
+Si deseas contribuir al proyecto, no dudes en enviar un **pull request** o reportar problemas en el repositorio.
+
+---
+
+Gracias por tu interés en devTree.
+
+✨ **Organiza todas tus redes sociales en un solo lugar.** ✨
+
+---
+
+📞 Contacto
+
+Desarrollador: Salustiano Robles Terán  
+Email: saluroblesteran@gmail.com  
+Web: saluroblesteran.com  
+
+Gracias por tu interés en devTree.
+✨ **Conéctate de manera más fácil con el mundo.** ✨
