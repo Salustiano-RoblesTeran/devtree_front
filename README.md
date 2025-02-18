@@ -36,7 +36,7 @@ La primera solicitud puede tardar un poco más en responder, ya que la aplicaci�
   ![Buscar Nombre](/frontend/src/assets/busqueda.png)
 
 - **Registro:** Si el nombre está disponible, puedes registrarlo.
-  ![Registrarme](/frontend/src/assets/crearCuenta.png)
+  ![Registrarme](/src/assets/crearCuenta.png)
 
 - **Gestión de Redes:** Modifica y organiza los enlaces de tus redes sociales en tu perfil de devTree.
   ![Home](/frontend/src/assets/misRedes.png)
