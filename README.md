@@ -33,19 +33,19 @@ La primera solicitud puede tardar un poco más en responder, ya que la aplicaci�
 ## 🖼️ Vista de la Aplicación
 
 - **Búsqueda de Nombre:** El nombre elegido también será tu URL personalizada.
-  ![Buscar Nombre](/frontend/src/assets/busqueda.png)
+  ![Buscar Nombre](/src/assets/busqueda.png)
 
 - **Registro:** Si el nombre está disponible, puedes registrarlo.
   ![Registrarme](/src/assets/crearCuenta.png)
 
 - **Gestión de Redes:** Modifica y organiza los enlaces de tus redes sociales en tu perfil de devTree.
-  ![Home](/frontend/src/assets/misRedes.png)
+  ![Home](/src/assets/misRedes.png)
 
 - **Edición de Perfil:** Personaliza tu cuenta con una imagen (almacenada en Cloudinary) y una descripción.
-  ![Perfil](/frontend/src/assets/perfil.png)
+  ![Perfil](/src/assets/perfil.png)
 
 - **Comparte tu Página:** Comparte tu URL personalizada, por ejemplo: [Mi devTree](https://devtree.saluroblesteran.com/portfolio)
-  ![DevTree](/frontend/src/assets/Pagina.png)
+  ![DevTree](/src/assets/Pagina.png)
 
 ---
 
